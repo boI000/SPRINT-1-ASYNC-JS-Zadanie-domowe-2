@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+body {
+  background-color: #d7d7d7;
+}
+
+input {
+  line-height: 2em;
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+.controls {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.charactersGrid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.resultMessage {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  height: 400px;
+  border: 0px solid #000;
+  border-radius: 18px;
+  box-shadow: 4px 4px 2px 2px rgb(0, 0, 0, 20%);
+}
+
+.charData {
+  text-align: center;
+  height: 100%;
+  align-content: center;
+}
+
+p {
+  margin: 5px;
+  font-size: 18px;
+}
+
+span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.img {
+  width: 100%;
+  max-height: 300px;
+  border-radius: 16px;
+}
+
+.pagination {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.pageBtn {
+  background-color: #4b4bee;
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+}
+
+.deleteBtn {
+  font-size: 14px;
+  width: 150px;
+  background-color: #d7d7d7;
+  border: 1px solid #4b4bee;
+  border-radius: 8px;
+  padding: 6px;
+}
+
+.formContainer {
+  background-color: #fff;
+  border-radius: 18px;
+  width: 1000px;
+  padding: 20px;
+  margin-top: 20px;
+  justify-self: center;
+  box-shadow: 4px 4px 2px 2px rgb(0, 0, 0, 20%);
+}
+
+.addCharacterForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.addCharacterForm input,
+select {
+  background-color: #d7d7d7;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+.addCharacterForm select {
+  font-size: 14px;
+  padding: 14px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.addBtn {
+  background-color: #4b4bee;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 16px;
+  height: 60px;
+  width: 200px;
+  margin-top: 20px;
+  align-self: center;
+}
